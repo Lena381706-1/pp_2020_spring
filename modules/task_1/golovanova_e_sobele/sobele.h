@@ -11,9 +11,9 @@
 
 class image {
 public:
-	int width = 0, height = 0;
-	std::vector<int> matrix;
-	image(int _width, int _height);
+  int width = 0, height = 0;
+  std::vector<int> matrix;
+  image(int _width, int _height);
 };
 
 image getRandomMatrix(int _width, int _height);
