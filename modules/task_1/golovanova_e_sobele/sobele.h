@@ -10,7 +10,7 @@
 #include <iostream>
 
 class image {
-public: 
+ public:
   int width = 0, height = 0;
   std::vector<int> matrix;
   image(int _width, int _height);

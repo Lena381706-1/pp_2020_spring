@@ -35,7 +35,7 @@ image MainFunction(image Start) {
   Gx.resize(9);
   Gy.resize(9);
   Gx = { -1, 0, 1, -2, 0, 2, -1, 0, 1 };
-  Gy = { -1, -2, -1, 0, 0, 0,	1, 2, 1 };
+  Gy={-1,-2,-1,0,0,0,	1,2,1};
   image result(Start.width, Start.height);
   int i = 1, j = 1;
   while (i < Start.width - 1) {
@@ -54,7 +54,7 @@ image MainFunction(image Start) {
       }
       if (sqrt(X * X + Y * Y) > 255)
         result.matrix[ind] = 255;
-      else 
+      else
         result.matrix[ind] = sqrt(X * X + Y * Y);
       j++;
     }
