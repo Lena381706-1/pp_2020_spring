@@ -4,7 +4,7 @@
 #include <ctime>
 #include <vector>
 #include <iostream>
-#include "sobele.h"
+#include "../../../modules/task_1/golovanova_e_sobele/sobele.h"
 #include "gtest/gtest.h"
 
 TEST(sobel, uncorrect_width) {

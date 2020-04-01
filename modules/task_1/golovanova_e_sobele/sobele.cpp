@@ -4,7 +4,7 @@
 #include <ctime>
 #include <vector>
 #include <iostream>
-#include "sobele.h"
+#include "../../../modules/task_1/golovanova_e_sobele/sobele.h"
 
 image::image(int _width, int _height) {
   if ((_width <= 0) || (_height <= 0))
@@ -35,8 +35,7 @@ image MainFunction(image Start) {
   Gx.resize(9);
   Gy.resize(9);
   Gx = { -1, 0, 1, -2, 0, 2, -1, 0, 1 };
-	Gy = { -1, -2, -1, 0, 0, 0,	1, 2, 1 };
-  
+  Gy = { -1, -2, -1, 0, 0, 0,	1, 2, 1 };
   image result(Start.width, Start.height);
   int i = 1, j = 1;
   while (i < Start.width - 1) {
@@ -55,7 +54,8 @@ image MainFunction(image Start) {
       }
       if (sqrt(X * X + Y * Y) > 255)
         result.matrix[ind] = 255;
-      else result.matrix[ind] = sqrt(X * X + Y * Y);
+      else 
+        result.matrix[ind] = sqrt(X * X + Y * Y);
       j++;
     }
     i++;
