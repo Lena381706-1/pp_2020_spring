@@ -39,8 +39,4 @@ TEST(sobel, no_equality_matrix) {
   ASSERT_NE(Ex1.matrix, res.matrix);
 }
 
-//TEST(sobel, no_equality_matrix) {
-//  image Ex1 = getRandomMatrix(5, 5);
-//  image res = OmpMainFunction(Ex1);
-//  ASSERT_NE(Ex1.matrix, res.matrix);
-//}
+

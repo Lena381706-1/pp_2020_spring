@@ -78,13 +78,13 @@ image OmpMainFunction(image Start) {
   image result(Start.width, Start.height);
 
 #pragma omp parallel for
-  for(int i=0; i < Start.width; i++) {
-    for (int j=0; j < Start.height; j++) {
+  for(int i = 0; i < Start.width; i++) {
+    for (int j = 0; j < Start.height; j++) {
       int ind = i * Start.height + j;
       int X = 0, Y = 0, Ind_G = 0;
       int a = 0, b = 0;
-      for (int a=0; a++; a<3) { 
-        for (int b = 0; b++; b < 3) {
+      for (int a = 0; a < 3; a++) {
+        for (int b = 0; b < 3; b++) {
           X = Gx[Ind_G] * Start.matrix[(i + a) * Start.height + j + b] + X;
           Y = Gy[Ind_G] * Start.matrix[(i + a) * Start.height + j + b] + Y;
           Ind_G++;
