@@ -78,7 +78,7 @@ image OmpMainFunction(image Start) {
   image result(Start.width, Start.height);
 
 #pragma omp parallel for
-  for(int i = 0; i < Start.width; i++) {
+  for (int i = 0; i < Start.width; i++) {
     for (int j = 0; j < Start.height; j++) {
       int ind = i * Start.height + j;
       int X = 0, Y = 0, Ind_G = 0;
