@@ -90,12 +90,10 @@ image OmpMainFunction(image Start) {
         }
       }
 
-
       if (sqrt(X * X + Y * Y) > 255)
         result.matrix[ind] = 255;
       else
         result.matrix[ind] = sqrt(X * X + Y * Y);
-      j++;
     }
   }
   return result;
