@@ -82,7 +82,6 @@ image OmpMainFunction(image Start) {
     for (int j = 0; j < Start.height; j++) {
       int ind = i * Start.height + j;
       int X = 0, Y = 0, Ind_G = 0;
-      int a = 0, b = 0;
       for (int a = 0; a < 3; a++) {
         for (int b = 0; b < 3; b++) {
           X = Gx[Ind_G] * Start.matrix[(i + a) * Start.height + j + b] + X;
