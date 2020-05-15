@@ -32,11 +32,3 @@ TEST(sobel, equality_height) {
   image Ex1(16, 16);
   ASSERT_EQ(Ex1.height, 16);
 }
-
-TEST(sobel, no_equality_matrix) {
-  image Ex1 = getRandomMatrix(5, 5);
-  image res = SequenceMainFunction(Ex1);
-  ASSERT_NE(Ex1.matrix, res.matrix);
-}
-
-
